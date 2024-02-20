@@ -4,7 +4,8 @@ import {
     creator,
     web,
     javascript,
-    typescript,
+    // python,
+    //AirForce,
     html,
     css,
     reactjs,
@@ -17,14 +18,13 @@ import {
     docker,
     meta,
     starbucks,
-    tesla,
+    WorkoutTracker,
     shopify,
-    carrent,
+    idlePlatoon,
     jobit,
     tripguide,
     threejs,
   } from "../assets";
-  
   export const navLinks = [
     {
       id: "about",
@@ -46,7 +46,7 @@ import {
       icon: web,
     },
     {
-      title: "React Native Developer",
+      title: "Frontend Developer",
       icon: mobile,
     },
     {
@@ -54,36 +54,33 @@ import {
       icon: backend,
     },
     {
-      title: "Content Creator",
+      title: "Sr. Support Analyst",
       icon: creator,
     },
   ];
   
   const technologies = [
     {
-      name: "HTML 5",
+      name: "HTML",
       icon: html,
     },
     {
-      name: "CSS 3",
+      name: "CSS",
       icon: css,
     },
     {
       name: "JavaScript",
       icon: javascript,
     },
-    {
-      name: "TypeScript",
-      icon: typescript,
-    },
+    // {
+    //   name: "Python",
+    //   icon: python,
+    // },
     {
       name: "React JS",
       icon: reactjs,
     },
-    {
-      name: "Redux Toolkit",
-      icon: redux,
-    },
+    
     {
       name: "Tailwind CSS",
       icon: tailwind,
@@ -91,10 +88,6 @@ import {
     {
       name: "Node JS",
       icon: nodejs,
-    },
-    {
-      name: "MongoDB",
-      icon: mongodb,
     },
     {
       name: "Three JS",
@@ -105,10 +98,6 @@ import {
       icon: git,
     },
     {
-      name: "figma",
-      icon: figma,
-    },
-    {
       name: "docker",
       icon: docker,
     },
@@ -116,150 +105,151 @@ import {
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
+      title: "Ground Transportation Operater",
+      company_name: "United States Air Force ",
+      icon: AirForce,
       iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      date: "Jan 2017 - Oct 2020",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Aided in Doc Cargo operations, Moved over $22 Million worth of assets for a $4.9 Billion Nuclear program.",
+        "Completed 17K request, moved 100K passengers, and over 15M lbs.",
+        "High perfomering trainer; developed skill-specific training for 20 airmen logged over 250 hours of on the road training for over 17 vehicle types.",
       ],
     },
     {
-      title: "React Native Developer",
+      title: "Documented Cargo Manager",
       company_name: "Tesla",
-      icon: tesla,
+      icon: AirForce,
       iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
+      date: "Oct 2020 - Oct 2022",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Managed the tracking of a diverse array of assets using NoSQL databases, totaling $30M in classified, hazardous, and oversized cargo, to ensure efficient monitoring, control, and data visualization when needed.",
+        "Pioneered a successful $10k innovation project that connected delivery data in real-time via Getac tablets for Data Processing and tracking resulting in improved monitoring efficiency",
+        "Managed Airmens input of data points into the Air Force Network, utilizing a CSV platform to show precise delivery timelines and robust data tracking mechanisms",
       ],
     },
     {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
+      title: "Code Platoon Student",
+      company_name: "Code Platoon",
+      icon: '',
       iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
+      date: "Oct 2022 - Feb 2023",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Learned frontend development using JavaScript, HTML, and CSS on the React.js framework.",
+        "Learned backend development using Python, SQL, and PostgreSQL on the Django framework.",
+        "Created personal and team projects, leveraging Git for version control and Agile methodolgoies among the class.",
       ],
     },
     {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
+      title: "Full stack Developer Intern",
+      company_name: "SeqTek",
+      icon: '',
       iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
+      date: "Feb 2023 - May 2023",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+        "Successfully orchestrated the migration of a C#/.NET application to the FastAPI framework, ensuring impeccable integration with the prevailing technology landscape.",
+        "Prevailed with the incorporation of the tech stack, demonstrated proficiency in the front-end using React, JavaScript, and C#; back-end using FastAPI, Python, and SQLAlchemy as the database with remarkable adaptability.",
         "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Harnessed the power of Docker, Visual Studio Code, and GitHub to elevate debugging techniques and collaborated seamlessly with senior developers to bring an innovative application to fruition.",
+      ],
+    },
+    {
+      title: "Coding Bootcamp Assistant",
+      company_name: "SeqTek",
+      icon: '',
+      iconBg: "#E6DEDD",
+      date: "Jun 2023 - Sep 2023",
+      points: [
+        "Skillfully led students through hands-on exercises while addressing Django and React challenges, cultivating an immersive and stimulating learning atmosphere.",
+        "Offered personalized one-on-one mentorship to students, nurturing an environment of continual advancement in JavaScript, Python, HTML, and CSS throughout the course.",
+        "Collaborated seamlessly with instructors to deliver concise and comprehensible guidance, through different OS systems such as macOS and Linux that solidified core concepts, enriching command-line knowledge.",
+      ],
+    },
+    {
+      title: "Sr. Support Analysist",
+      company_name: "Cotiviti",
+      icon: '',
+      iconBg: "#E6DEDD",
+      date: "Oct 2023 - Current",
+      points: [
+        "Diligently monitored, analyzed, and resolved intricate data platform, configuration, and infrastructure-related issues, ensuring uninterrupted operations and system stability through SQL Databases.",
+        "Fostered cross-functional collaboration, seamlessly coordinating with developers, network engineers, and other stakeholders to rapidly address and resolve issues via Microsoft platforms.",
+        "Keep strict compliance with security and industry standards, mitigating potential risks associated with data platforms and infrastructure to solve any outage of services.",
       ],
     },
   ];
   
   const testimonials = [
-    {
-      testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
-      image: "https://randomuser.me/api/portraits/women/4.jpg",
-    },
-    {
-      testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "DEF Corp",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
-    },
-    {
-      testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
-      designation: "CTO",
-      company: "456 Enterprises",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
-    },
+    // {
+    //   testimonial:
+    //     "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
+    //   name: "Sara Lee",
+    //   designation: "CFO",
+    //   company: "Acme Co",
+    //   image: "https://randomuser.me/api/portraits/women/4.jpg",
+    // },
+    // {
+    //   testimonial:
+    //     "I've never met a web developer who truly cares about their clients' success like Rick does.",
+    //   name: "Chris Brown",
+    //   designation: "COO",
+    //   company: "DEF Corp",
+    //   image: "https://randomuser.me/api/portraits/men/5.jpg",
+    // },
+    // {
+    //   testimonial:
+    //     "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
+    //   name: "Lisa Wang",
+    //   designation: "CTO",
+    //   company: "456 Enterprises",
+    //   image: "https://randomuser.me/api/portraits/women/6.jpg",
+    // },
   ];
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Workout Tracker",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Application that allows users to track future and pass workouts.",
       tags: [
         {
-          name: "react",
+          name: "React.js",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "Django",
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
+          name: "Javascript & Python",
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: WorkoutTracker,
+      source_code_link: "https://github.com/JaedynK/exercise_planner",
     },
     {
-      name: "Job IT",
+      name: "Ideal Platton",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "Game that has idle functionality that runs without you having to be present.",
       tags: [
         {
-          name: "react",
+          name: "React.js",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "Django",
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "Javascript & Python",
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image: idlePlatoon,
+      source_code_link: "https://github.com/YebraL/Game-Idle",
     },
-    {
-      name: "Trip Guide",
-      description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-      tags: [
-        {
-          name: "nextjs",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "supabase",
-          color: "green-text-gradient",
-        },
-        {
-          name: "css",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
-    },
+    
   ];
   
   export { services, technologies, experiences, testimonials, projects };
