@@ -6,6 +6,8 @@ import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
+import WorkoutTracker from "./WorkoutTracker.png"
+import idlePlatoon from "./idlePlatoon.png"
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -31,6 +33,8 @@ import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
 export {
+  idlePlatoon,
+  WorkoutTracker,
   JKlogo,
   backend,
   creator,

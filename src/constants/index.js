@@ -107,7 +107,7 @@ import {
     {
       title: "Ground Transportation Operater",
       company_name: "United States Air Force ",
-      icon: AirForce,
+      icon: "AirForce",
       iconBg: "#383E56",
       date: "Jan 2017 - Oct 2020",
       points: [
@@ -119,7 +119,7 @@ import {
     {
       title: "Documented Cargo Manager",
       company_name: "Tesla",
-      icon: AirForce,
+      icon: "AirForce",
       iconBg: "#E6DEDD",
       date: "Oct 2020 - Oct 2022",
       points: [
