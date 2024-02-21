@@ -4,26 +4,22 @@ import {
     creator,
     web,
     javascript,
-    // python,
+    python,
     //AirForce,
+    cotiviti,
     html,
     css,
     reactjs,
-    redux,
     tailwind,
     nodejs,
-    mongodb,
     git,
-    figma,
     docker,
-    meta,
-    starbucks,
     WorkoutTracker,
-    shopify,
     idlePlatoon,
-    jobit,
-    tripguide,
     threejs,
+    seqtek,
+    codePlatoon,
+    USAF
   } from "../assets";
   export const navLinks = [
     {
@@ -72,10 +68,10 @@ import {
       name: "JavaScript",
       icon: javascript,
     },
-    // {
-    //   name: "Python",
-    //   icon: python,
-    // },
+    {
+      name: "Python",
+      icon: python,
+    },
     {
       name: "React JS",
       icon: reactjs,
@@ -106,9 +102,9 @@ import {
   const experiences = [
     {
       title: "Ground Transportation Operater",
-      company_name: "United States Air Force ",
-      icon: "AirForce",
-      iconBg: "#383E56",
+      company_name: "United States Air Force",
+      icon: USAF,
+      iconBg: "#E6DEDD",
       date: "Jan 2017 - Oct 2020",
       points: [
         "Aided in Doc Cargo operations, Moved over $22 Million worth of assets for a $4.9 Billion Nuclear program.",
@@ -118,8 +114,8 @@ import {
     },
     {
       title: "Documented Cargo Manager",
-      company_name: "Tesla",
-      icon: "AirForce",
+      company_name: "United States Air Force",
+      icon: USAF,
       iconBg: "#E6DEDD",
       date: "Oct 2020 - Oct 2022",
       points: [
@@ -131,8 +127,8 @@ import {
     {
       title: "Code Platoon Student",
       company_name: "Code Platoon",
-      icon: '',
-      iconBg: "#383E56",
+      icon: codePlatoon,
+      iconBg: "#E6DEDD",
       date: "Oct 2022 - Feb 2023",
       points: [
         "Learned frontend development using JavaScript, HTML, and CSS on the React.js framework.",
@@ -143,7 +139,7 @@ import {
     {
       title: "Full stack Developer Intern",
       company_name: "SeqTek",
-      icon: '',
+      icon: seqtek,
       iconBg: "#E6DEDD",
       date: "Feb 2023 - May 2023",
       points: [
@@ -155,8 +151,8 @@ import {
     },
     {
       title: "Coding Bootcamp Assistant",
-      company_name: "SeqTek",
-      icon: '',
+      company_name: "Code Platoon",
+      icon: codePlatoon,
       iconBg: "#E6DEDD",
       date: "Jun 2023 - Sep 2023",
       points: [
@@ -168,7 +164,7 @@ import {
     {
       title: "Sr. Support Analysist",
       company_name: "Cotiviti",
-      icon: '',
+      icon: cotiviti,
       iconBg: "#E6DEDD",
       date: "Oct 2023 - Current",
       points: [
@@ -182,27 +178,10 @@ import {
   const testimonials = [
     // {
     //   testimonial:
-    //     "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    //   name: "Sara Lee",
-    //   designation: "CFO",
-    //   company: "Acme Co",
-    //   image: "https://randomuser.me/api/portraits/women/4.jpg",
-    // },
-    // {
-    //   testimonial:
-    //     "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    //   name: "Chris Brown",
-    //   designation: "COO",
-    //   company: "DEF Corp",
-    //   image: "https://randomuser.me/api/portraits/men/5.jpg",
-    // },
-    // {
-    //   testimonial:
-    //     "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    //   name: "Lisa Wang",
-    //   designation: "CTO",
-    //   company: "456 Enterprises",
-    //   image: "https://randomuser.me/api/portraits/women/6.jpg",
+    //   name:
+    //   designation:
+    //   company:
+    //   image:
     // },
   ];
   

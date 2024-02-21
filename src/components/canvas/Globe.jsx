@@ -9,8 +9,8 @@ const Globe = ({ isMobile }) => {
   const globe = useGLTF("./earth/scene.gltf");
 
   return (
-    <mesh position={[0, 1.5, 0]}>
-      <hemisphereLight position={[0, 2, 0]}  intensity={1} groundColor='black' />
+    <mesh position={[0, 1, 0]}>
+      <hemisphereLight position={[0, 1, 0]}  intensity={1} groundColor='black' />
       {/* <spotLight position={[0, -2, 0]}  penumbra={1} intensity={1} castShadow shadow-mapSize={1024} /> */}
       <pointLight intensity={1} />
       <primitive object={globe.scene} scale={isMobile ? 0.55 : 0.575} />
@@ -18,7 +18,7 @@ const Globe = ({ isMobile }) => {
       {/* <pointLight intensity={.4} position={[0, -2, 0]}   /> */}
       <primitive
         object={globe.scene}
-        scale={isMobile ? 1 : 1}
+        scale={isMobile ? 1 : 1.5}
         position={isMobile ? [0, -3, -2.2] : [0, -3.25, -1.5]}
         rotation={[0, 0, 0]}
       />
