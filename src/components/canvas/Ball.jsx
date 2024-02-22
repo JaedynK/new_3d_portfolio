@@ -1,4 +1,4 @@
-import React, { Suspense } from "react";
+import React, { Suspense, useRef } from "react";
 import { Canvas } from "@react-three/fiber";
 import {
   Decal,
@@ -7,20 +7,31 @@ import {
   Preload,
   useTexture,
 } from "@react-three/drei";
+import { PerspectiveCamera } from "three";
 
 import CanvasLoader from "../Loader";
 
 const Ball = (props) => {
   const [decal] = useTexture([props.imgUrl]);
+  const camera = useRef();
+
 
   return (
-    <Float speed={.5} rotationIntensity={1} floatIntensity={1}>
-      <ambientLight intensity={0.25} />
-      <directionalLight position={[0, 0, 0.05]} />
-      <mesh castShadow receiveShadow scale={2.75}>
+    <Float speed={.5} rotationIntensity={.5} floatIntensity={2}>
+      {/* <perspectiveCamera
+        ref={camera}
+        position={[0, -5, 0]} // Adjust the initial position of the camera
+      /> */}
+      <ambientLight intensity={5} />
+      <directionalLight position={[0, 0, 0.05]}  intensity={5}/>
+      <spotLight position={[0, -1, -0.05]}  intensity={5}/>
+      <mesh scale={2.75}>
         <icosahedronGeometry args={[1, 1]} />
         <meshStandardMaterial
-          color='#fff8eb'
+          color='#ffd700'
+          metalness={1}  
+          roughness={.5}
+          shadowIntensity={0}
           polygonOffset
           polygonOffsetFactor={-5}
           flatShading

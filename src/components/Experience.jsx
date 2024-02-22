@@ -15,13 +15,16 @@ import { textVariant } from "../utils/motions";
 const ExperienceCard = ({ experience }) => {
   return (
     <VerticalTimelineElement
+      lineColor={{ color : "#af9408" }}
       contentStyle={{
-        background: "#1d1836",
-        color: "#fff",
+        background: 'linear-gradient(to bottom, #666666, #1a1a1a)',
+        color: "#af9408",
+        border: "1px solid #af9408",
+      
       }}
-      contentArrowStyle={{ borderRight: "7px solid  #232631" }}
+      contentArrowStyle={{ borderRight: "7px solid  #af9408" }}
       date={experience.date}
-      iconStyle={{ background: experience.iconBg }}
+      iconStyle={{color: '#af9408', background: experience.iconBg}}
       icon={
         <div className='flex justify-center items-center w-full h-full'>
           <img
@@ -33,9 +36,9 @@ const ExperienceCard = ({ experience }) => {
       }
     >
       <div>
-        <h3 className='text-white text-[24px] font-bold'>{experience.title}</h3>
+        <h3 className='text-[#af9408] text-[24px] font-bold'>{experience.title}</h3>
         <p
-          className='text-secondary text-[16px] font-semibold'
+          className='text-[#9d8c01] text-[16px] font-semibold'
           style={{ margin: 0 }}
         >
           {experience.company_name}
@@ -60,10 +63,10 @@ const Experience = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText} text-center`}>
+        <p style={{ color: "white" }} className={`${styles.sectionSubText} text-center`}>
           What I have done so far
         </p>
-        <h2 className={`${styles.sectionHeadText} text-center`}>
+        <h2 style={{ color: "#af9408" }} className={`${styles.sectionHeadText} text-center`} >
           Work Experience.
         </h2>
       </motion.div>

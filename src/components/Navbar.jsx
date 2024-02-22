@@ -44,8 +44,8 @@ const Navbar = () => {
       >
         <img src={JKlogo} alt='JKlogo' className='w-9 h-9 object-contain' />
         <p className='text-white text-[18px] font-bold cursor-pointer flex '>
-          Jaedyn
-          <span className='sm:block hidden'> | Keister</span>
+          Jaedyn &nbsp;
+          <span className='sm:block hidden'> |&nbsp; Keister</span>
         </p>
       </Link>
 
@@ -54,7 +54,7 @@ const Navbar = () => {
           <li
             key={nav.id}
             className={`${
-              active === nav.title ? "text-white" : "text-secondary"
+              active === nav.title ? "text-black" : "text-white"
             } hover:text-white text-[18px] font-medium cursor-pointer`}
             onClick={() => setActive(nav.title)}
           >
@@ -82,7 +82,7 @@ const Navbar = () => {
               <li
                 key={nav.id}
                 className={`font-poppins font-medium cursor-pointer text-[16px] ${
-                  active === nav.title ? "text-white" : "text-secondary"
+                  active === nav.title ? "text-white" : "text-black"
                 }`}
                 onClick={() => {
                   setToggle(!toggle);

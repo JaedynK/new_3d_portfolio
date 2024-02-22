@@ -4,6 +4,11 @@
 @tailwind components;
 @tailwind utilities;
 
+/* to change timeline line color */
+.vertical-timeline::before {
+  border-right: 7px solid #908321;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -33,6 +38,22 @@
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+.gold-gradient {
+  background: #a28805;
+  background: linear-gradient(-90deg, #988c2f 0%, rgba(60, 51, 80, 0) 100%);
+  background: -webkit-linear-gradient(
+    -90deg,
+    #b69a0d 0%,
+    rgba(60, 51, 80, 0) 100%
+  );
+}
+
+.silver-gradient {
+  background: #8d8d8d;
+  background: linear-gradient(-90deg, #dbdbdb 0%, rgba(174, 173, 173, 0) 100%);
+  background: -webkit-linear-gradient(-90deg, #898989 0%, rgba(255, 255, 255, 0) 100%);
+}
+
 .violet-gradient {
   background: #804dee;
   background: linear-gradient(-90deg, #804dee 0%, rgba(60, 51, 80, 0) 100%);
@@ -50,7 +71,7 @@
 }
 
 .orange-text-gradient {
-  background: #f12711; /* fallback for old browsers */
+  background: #f5ca0f; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to top,
     #f12711,

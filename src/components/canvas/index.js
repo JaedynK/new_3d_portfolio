@@ -1,6 +1,6 @@
 import LetterCanvas from "./Letter";
 import BallCanvas from "./Ball";
-import GlobeCanvas from "./Globe";
+import D20Canvas from "./D20";
 import StarsCanvas from "./Stars";
 
-export { LetterCanvas, BallCanvas, GlobeCanvas, StarsCanvas };
+export { LetterCanvas, BallCanvas, D20Canvas, StarsCanvas };
