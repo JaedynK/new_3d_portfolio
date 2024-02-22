@@ -39,7 +39,7 @@ const D20 = ({ isMobile }) => {
 
       <primitive
         object={d20.scene}
-        scale={isMobile ? [6, 6, 6] : [7, 7, 7]}
+        scale={isMobile ? [7, 7, 7] : [5, 5, 5]}
         position={[0, 0, 0]}
         rotation={[0, 0, 0]}
         receiveShadow={false}
@@ -76,11 +76,11 @@ const D20Canvas = () => {
   return (
     <div   style={{
       position: 'absolute',
-      bottom: '10%',
+      top: '55%',
       left: '50%',
       transform: 'translateX(-50%)',
-      width: isMobile ? '200px' : '400px',
-      height: isMobile ? '200px' : '400px',
+      width: isMobile ? '200px' : '300px',
+      height: isMobile ? '200px' : '300px',
     }}>
     <Canvas
       frameloop="demand"
@@ -93,8 +93,6 @@ const D20Canvas = () => {
         <OrbitControls  enableZoom={false}
          maxPolarAngle={Math.PI / 2}
          minPolarAngle={Math.PI / 2}
-         minDistance={5} // Adjust as needed
-        maxDistance={100} // Adjust as needed
         />
     
         <D20 isMobile={isMobile}  />
