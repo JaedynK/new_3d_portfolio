@@ -71,8 +71,8 @@ const Works = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p style={{ color: "white" }}className={`${styles.sectionSubText} `}>My work</p>
         <h2 style={{ color: "#af9408" }} className={`${styles.sectionHeadText}`}>Projects.</h2>
+        <p style={{ color: "white" }}className={`${styles.sectionSubText} `}>more on the way</p>
       </motion.div>
 
       <div className='w-full flex'>
@@ -80,11 +80,10 @@ const Works = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className='mt-3 text-white text-[17px] max-w-3xl leading-[30px]'
         >
-          Following projects showcases my skills and experience through
-          real-world examples of my work. Each project is briefly described with
-          links to code repositories. It reflects my
-          ability to solve complex problems, work with different technologies,
-          and manage projects effectively.
+        These projects highlight my skills and experience with examples of my work. 
+        Each project is briefly described with links to code repositories, 
+        demonstrating my ability to solve complex problems, work with various technologies, 
+        and manage projects effectively.
         </motion.p>
       </div>
 

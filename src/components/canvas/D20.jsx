@@ -9,7 +9,7 @@ const D20 = ({ isMobile }) => {
   const d20 = useGLTF("./d20/scene.gltf");
 
   return (
-    <mesh position={[0, -2, 0]}>
+    <mesh position={[0, 0, 0]} >
       {/* center */}
     <spotLight position={[-5, 0, 10]} intensity={1000} angle={Math.PI / 6} /> 
     {/* #18 */}
@@ -39,7 +39,7 @@ const D20 = ({ isMobile }) => {
 
       <primitive
         object={d20.scene}
-        scale={isMobile ? 3 : 4}
+        scale={isMobile ? [6, 6, 6] : [7, 7, 7]}
         position={[0, 0, 0]}
         rotation={[0, 0, 0]}
         receiveShadow={false}
@@ -74,20 +74,33 @@ const D20Canvas = () => {
   }, []);
 
   return (
+    <div   style={{
+      position: 'absolute',
+      bottom: '10%',
+      left: '50%',
+      transform: 'translateX(-50%)',
+      width: isMobile ? '200px' : '400px',
+      height: isMobile ? '200px' : '400px',
+    }}>
     <Canvas
       frameloop="demand"
       dpr={[1, 2]}
-      camera={{ position: [20, 1, 20], fov: 20 }}
+      camera={{ position: [20, 0, 20], fov: 20 }}
       gl={{ preserveDrawingBuffer: true }}
-
+      // style={{ width: '100%', height: '100%' }}
     >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls  enableZoom={false}
          maxPolarAngle={Math.PI / 2}
-         minPolarAngle={Math.PI / 2}/>
+         minPolarAngle={Math.PI / 2}
+         minDistance={5} // Adjust as needed
+        maxDistance={100} // Adjust as needed
+        />
+    
         <D20 isMobile={isMobile}  />
       </Suspense>
     </Canvas>
+    </div>
   );
 };
 

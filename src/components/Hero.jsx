@@ -19,12 +19,14 @@ const Hero = () => {
             Hi, I'm <span className='text-[#af9408]'>Jaedyn</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-          A Veteran who took a chance on coding and rolled the dice to become a Developer! <br className='sm:block hidden' />
+          A father, husband, and veteran who <a className='sm:block hidden'>took a chance on coding and</a> rolled the dice to become a software developer
+         
           </p>
         </div>
       </div>
 
       <D20Canvas />
+
 
 {/* This is for the center scroll bar if I want it later*/}
       {/* <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
