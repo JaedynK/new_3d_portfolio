@@ -118,7 +118,7 @@ import {
       iconBg: "#E6DEDD",
       date: "Oct 2020 - Oct 2022",
       points: [
-        "Managed the tracking of a diverse array of assets using NoSQL databases, totaling $30M in classified, hazardous, and oversized cargo, to ensure efficient.",
+        "Managed the tracking of a diverse array of assets using NoSQL databases, totaling $30M in classified, hazardous, and oversized cargo, to ensure efficiency.",
         "Pioneered a successful $10k innovation project that connected delivery data in real-time via Getac tablets for Data Processing and tracking.",
         "Managed Airmens input of data points into the Air Force Network, utilizing a CSV platform to show precise delivery timelines and robust data tracking mechanisms",
       ],
@@ -206,7 +206,7 @@ import {
       source_code_link: "https://github.com/JaedynK/exercise_planner",
     },
     {
-      name: "Ideal Platton",
+      name: "Idle Platton",
       description:
         "Game that has idle functionality that runs without you having to be present.",
       tags: [

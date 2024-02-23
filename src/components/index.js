@@ -1,4 +1,4 @@
-import { LetterCanvas, BallCanvas, D20Canvas, StarsCanvas } from './canvas';
+import { LetterCanvas, BallCanvas, D20Canvas } from './canvas';
 import Hero from './Hero';
 import Navbar from './Navbar';
 import About from './About';
@@ -20,5 +20,4 @@ export {
   LetterCanvas, 
   BallCanvas, 
   D20Canvas, 
-  StarsCanvas
 }

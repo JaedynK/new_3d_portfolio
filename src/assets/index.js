@@ -17,7 +17,6 @@ import javascript from "./tech/javascript.png";
 import nodejs from "./tech/nodejs.png";
 import reactjs from "./tech/reactjs.png";
 import tailwind from "./tech/tailwind.png";
-import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 import python from "./tech/python.png"
 
@@ -50,6 +49,5 @@ export {
   nodejs,
   reactjs,
   tailwind,
-  typescript,
   threejs,
 };
