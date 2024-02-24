@@ -3,22 +3,31 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls, useGLTF } from "@react-three/drei";
 
 import CanvasLoader from "../Loader";
+
 const D20 = ({ isMobile }) => {
+
   const d20 = useGLTF("./d20/scene.gltf");
+
   return (
-    <mesh position={[0, 0, 0]} >
+    <mesh >
+    
     <directionalLight position={[3, -4, 10]} intensity={500}  /> 
     <directionalLight position={[-3, 4, -10]} intensity={500}  /> 
+
       <primitive
         object={d20.scene}
         scale={isMobile ? [7, 7, 7] : [5, 5, 5]}
         position={[0, 0, 0]}
+        rotation={[0, 0, 0]}
+        receiveShadow={false}
+        castShadow={false} 
       />
     </mesh>
   );
 };
 const D20Canvas = () => {
   const [isMobile, setIsMobile] = useState(false);
+
   useEffect(() => {
     const updateIsMobile = () => {
         setIsMobile(window.matchMedia("(max-width: 500px)").matches);
@@ -30,6 +39,7 @@ const D20Canvas = () => {
         mediaQuery.removeEventListener("change", updateIsMobile);
     };
 }, []);
+
   return (
     <div   style={{
       position: 'absolute',
@@ -57,4 +67,5 @@ const D20Canvas = () => {
     </div>
   );
 };
+
 export default D20Canvas;

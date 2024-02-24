@@ -3,7 +3,6 @@ import { D20Canvas } from "./canvas";
 const Hero = () => {
   return (
     <section className={`relative w-full h-screen mx-auto`}>
-      <D20Canvas />
       <div
         className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
       >
@@ -20,6 +19,7 @@ const Hero = () => {
           </p>
         </div>
       </div>
+      <D20Canvas />
     </section>
   );
 };
