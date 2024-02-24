@@ -1,13 +1,10 @@
 import React, { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
-import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
-import { MeshStandardMaterial } from "three";
 import CanvasLoader from "../Loader";
 
 const Letter = () => {
   const letter = useGLTF("./letter/scene.gltf");
-
   return (
     <mesh position={[0, -4, 0]} >
       <ambientLight intensity={5}/>
@@ -16,7 +13,6 @@ const Letter = () => {
     </mesh>
   );
 };
-
 const LetterCanvas = () => {
   return (
     <Canvas

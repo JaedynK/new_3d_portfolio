@@ -1,13 +1,13 @@
-import JKlogo from "./JKlogo.png";
+import JKlogo from "./JKlogo.jpg";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
 import web from "./web.png";
-import github from "./github.png";
+import github from "./github.jpg";
 import menu from "./menu.svg";
 import close from "./close.svg";
-import WorkoutTracker from "./WorkoutTracker.png"
-import idlePlatoon from "./idlePlatoon.png"
+import WorkoutTracker from "./WorkoutTracker.jpg"
+import idlePlatoon from "./idlePlatoon.jpg"
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";

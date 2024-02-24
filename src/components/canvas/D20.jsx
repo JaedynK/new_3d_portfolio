@@ -1,42 +1,24 @@
-import React, { Suspense, useEffect, useState } from "react";
+import React, { Suspense, useEffect, useState} from "react";
 import { Canvas } from "@react-three/fiber";
-import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
+import { OrbitControls, useGLTF } from "@react-three/drei";
 
 import CanvasLoader from "../Loader";
-
 const D20 = ({ isMobile }) => {
-
   const d20 = useGLTF("./d20/scene.gltf");
-
   return (
     <mesh position={[0, 0, 0]} >
-    <spotLight position={[-5, 0, 10]} intensity={1000} angle={Math.PI / 6} /> 
-    <spotLight position={[15, 15, 5]} intensity={1000} angle={Math.PI / 6} />
-    <spotLight position={[5, -7, -4]} intensity={1000} angle={Math.PI / 6} />
-    <spotLight position={[0, -15, 0]} intensity={1000}  angle={Math.PI / 6}/>
-    <spotLight position={[-5, 15, -5]} intensity={1000} />
-    <spotLight position={[5, 10, -20]} intensity={1000}/>
-    <spotLight position={[-5, -10, -5]} intensity={1000}/>
-    <spotLight position={[-1, 20, -1]} intensity={1000}/>
-    <spotLight position={[5, -10, 5]} intensity={1000} />
-    <spotLight position={[-5, 10, 5]} intensity={1000} />
-    <spotLight position={[5, 7, 20]} intensity={1000}/>
-    <spotLight position={[10, 10, -10]} intensity={1000}/>
-    <spotLight position={[-5, -10, 10]} intensity={1000}/>
+    <directionalLight position={[3, -4, 10]} intensity={500}  /> 
+    <directionalLight position={[-3, 4, -10]} intensity={500}  /> 
       <primitive
         object={d20.scene}
         scale={isMobile ? [7, 7, 7] : [5, 5, 5]}
         position={[0, 0, 0]}
-        rotation={[0, 0, 0]}
-        receiveShadow={false}
-        castShadow={false} 
       />
     </mesh>
   );
 };
 const D20Canvas = () => {
   const [isMobile, setIsMobile] = useState(false);
-
   useEffect(() => {
     const updateIsMobile = () => {
         setIsMobile(window.matchMedia("(max-width: 500px)").matches);
@@ -48,7 +30,6 @@ const D20Canvas = () => {
         mediaQuery.removeEventListener("change", updateIsMobile);
     };
 }, []);
-
   return (
     <div   style={{
       position: 'absolute',
@@ -59,9 +40,10 @@ const D20Canvas = () => {
       height: isMobile ? '200px' : '300px',
     }}>
     <Canvas
+      preload='true'
       frameloop="demand"
       dpr={[1, 2]}
-      camera={{ position: [20, 0, 20], fov: 20 }}
+      camera={{ position: [20, 1, 20], fov: 20 }}
       gl={{ preserveDrawingBuffer: true }}
     >
       <Suspense fallback={<CanvasLoader />}>
@@ -75,5 +57,4 @@ const D20Canvas = () => {
     </div>
   );
 };
-
 export default D20Canvas;

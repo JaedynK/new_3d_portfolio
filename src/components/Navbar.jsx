@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-
 import { styles } from '../styles'
 import { navLinks } from '../constants'
 import { JKlogo, menu, close } from '../assets'
@@ -19,9 +18,7 @@ const Navbar = () => {
         setScrolled(false);
       }
     };
-
     window.addEventListener("scroll", handleScroll);
-
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
@@ -48,7 +45,6 @@ const Navbar = () => {
           <span className='sm:block hidden'> |&nbsp; Keister</span>
         </p>
       </Link>
-
       <ul className='list-none hidden sm:flex flex-row gap-10'>
         {navLinks.map((nav) => (
           <li
@@ -62,8 +58,6 @@ const Navbar = () => {
           </li>
         ))}
       </ul>
-
-           {/* This is for image backgroun on */}
       <div className='sm:hidden flex flex-1 justify-end items-center'>
         <img
           src={toggle ? close : menu}
@@ -71,7 +65,6 @@ const Navbar = () => {
           className='w-[28px] h-[28px] object-contain'
           onClick={() => setToggle(!toggle)}
         />
-
         <div
           className={`${
             !toggle ? "hidden" : "flex"
@@ -99,5 +92,4 @@ const Navbar = () => {
   </nav>
   )
 }
-
 export default Navbar
