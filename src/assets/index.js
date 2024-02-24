@@ -1,4 +1,4 @@
-import JKlogo from "./JKlogo.jpg";
+import JKlogo from "./JKlogo.png";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
